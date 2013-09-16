@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Office.Interop.Word;
 using System.IO;
 
-namespace WordPDFSave
+namespace WordToPDF
 {
     /// <summary>
     /// Program which saves a Micrsoft Word document to PDF.
