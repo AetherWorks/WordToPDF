@@ -25,17 +25,16 @@ namespace WordPDFSave
                 return;
             }
             
-            
+            // Initialize Word interop references.
             Application wordApplication = new Application();
             Document wordDocument = null;
 
-            
+            // Get full path of input and output files.
             object paramSourceDocPath = Path.GetFullPath(args[0]);
-
             string paramExportFilePath = Path.GetFullPath(args[1]);
             
             ///////////////////////////////////////////////
-            /// CONFIGURATION PARAMETERS
+            /// STATIC CONFIGURATION PARAMETERS
             //////////////////////////////////////////////
 
             WdExportFormat paramExportFormat = WdExportFormat.wdExportFormatPDF;
